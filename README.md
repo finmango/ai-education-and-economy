@@ -6,7 +6,7 @@ This repository contains preliminary research findings on the potential impact o
 
 ## Viewing the Research Findings
 
-To view the research findings: visit mngo.org/idea2
+To view the research findings: visit <a href="https://mngo.org/idea2" target="_blank">mngo.org/idea2</a>
 
 Alternatively, you can clone the repository and open the `index.html` file locally in your web browser.
 
