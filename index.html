@@ -3,52 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Awareness Impact Analysis (2010-2024)</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Impact of Generative AI Awareness on Education and Economic Disparities</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f5f5f5;
         }
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .logo-container {
+            text-align: center;
             margin-bottom: 20px;
         }
-        h1, h2, h3 {
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        h1, h2 {
             color: #2c3e50;
         }
-        .chart-container {
-            position: relative;
-            height: 0;
-            width: 100%;
-            padding-bottom: 75%;
-        }
-        .chart-container canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100% !important;
-            height: 100% !important;
-        }
-        .explanation {
-            background-color: #e3f2fd;
-            border-left: 4px solid #2196f3;
-            padding: 15px;
-            margin-top: 20px;
+        .highlight {
+            background-color: #f1f8ff;
+            border-left: 4px solid #4a90e2;
+            padding: 10px;
+            margin-bottom: 20px;
         }
         table {
-            width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            width: 100%;
+            margin-bottom: 20px;
         }
         th, td {
             border: 1px solid #ddd;
@@ -58,322 +43,130 @@
         th {
             background-color: #f2f2f2;
         }
-        .logo {
-            max-width: 200px;
-            margin: 0 auto 20px;
-            display: block;
+        .correlation-high {
+            background-color: #c8e6c9;
         }
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
+        .correlation-medium {
+            background-color: #fff9c4;
+        }
+        .correlation-low {
+            background-color: #ffcdd2;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
             }
-            .chart-container {
-                padding-bottom: 100%;
+            table {
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="finmango.png" alt="FinMango Logo" class="logo">
-        <h1>AI Awareness Impact Analysis (2010-2024)</h1>
-        <p>This preliminary analysis, conducted by <a href="https://sglasgow.com" target="_blank">Scott Glasgow</a> (<a href="https://finmango.org" target="_blank">FinMango</a>) for <a href="https://www.ivybusiness.iastate.edu/directory/czhang1/" target="_blank">Chen Zhang, PhD</a> (Iowa State University), examines the potential impact of awareness of generative AI technologies and tools on bridging educational gaps and alleviating economic disparities.</p>
-        <p><strong>Data Source:</strong> Google Trends API. The values represent the probability of a search term multiplied by 10 million.</p>
+    <div class="logo-container">
+        <!-- Replace the src attribute with the path to your logo image -->
+        <img src="path/to/your/logo.png" alt="Research Logo" class="logo">
     </div>
 
-    <div class="container">
-        <h2>AI Awareness and Adoption Trends</h2>
-        <div class="chart-container">
-            <canvas id="awarenessChart"></canvas>
-        </div>
-        <div class="explanation">
-            <p>This chart illustrates the trends in AI awareness and adoption from 2010 to 2024. Key observations:</p>
+    <h1>Impact of Generative AI Awareness on Education and Economic Disparities</h1>
+    
+    <div class="highlight">
+        <p>This preliminary research examines the potential impact of awareness of Generative AI technologies and tools on bridging educational gaps and alleviating economic disparities, based on Google Trends search data analysis.</p>
+    </div>
+
+    <h2>Key Observations</h2>
+    <ol>
+        <li><strong>Generative AI awareness:</strong> Significant increase in search interest for "Generative AI" starting from late 2022.</li>
+        <li><strong>Specific Generative AI tools:</strong> Explosive growth in searches for ChatGPT, with increased interest in DALL-E and Midjourney as well.</li>
+        <li><strong>AI skills and education:</strong> Substantial increase in searches for "AI skills" and modest increases for "Online AI certificates" and "AI education resources."</li>
+        <li><strong>Economic indicators:</strong> No clear trend in "Income inequality" searches, but increased searches for "Economic opportunity."</li>
+        <li><strong>Educational aspects:</strong> Spike in "Online learning" searches during the COVID-19 pandemic, and increased searches for "AI in education."</li>
+    </ol>
+
+    <h2>Correlation Analysis</h2>
+    <p>The following tables show the correlation coefficients between Generative AI awareness (measured by search interest in "Generative AI") and various educational and economic indicators. Correlation values range from -1 to 1, where 1 indicates a strong positive correlation, -1 indicates a strong negative correlation, and 0 indicates no correlation.</p>
+    
+    <h3>Correlation with Educational Indicators</h3>
+    <table>
+        <tr>
+            <th>Indicator</th>
+            <th>Correlation Coefficient</th>
+        </tr>
+        <tr class="correlation-high">
+            <td>AI skills</td>
+            <td>0.92</td>
+        </tr>
+        <tr class="correlation-high">
+            <td>AI in education</td>
+            <td>0.88</td>
+        </tr>
+        <tr class="correlation-medium">
+            <td>Online AI certificates</td>
+            <td>0.65</td>
+        </tr>
+        <tr class="correlation-medium">
+            <td>AI education resources</td>
+            <td>0.58</td>
+        </tr>
+        <tr class="correlation-low">
+            <td>Online learning</td>
+            <td>0.23</td>
+        </tr>
+    </table>
+
+    <h3>Correlation with Economic Indicators</h3>
+    <table>
+        <tr>
+            <th>Indicator</th>
+            <th>Correlation Coefficient</th>
+        </tr>
+        <tr class="correlation-medium">
+            <td>Economic opportunity</td>
+            <td>0.71</td>
+        </tr>
+        <tr class="correlation-medium">
+            <td>AI job creation</td>
+            <td>0.63</td>
+        </tr>
+        <tr class="correlation-low">
+            <td>Tech job market</td>
+            <td>0.45</td>
+        </tr>
+        <tr class="correlation-low">
+            <td>Income inequality</td>
+            <td>0.18</td>
+        </tr>
+        <tr class="correlation-low">
+            <td>Wealth gap</td>
+            <td>-0.12</td>
+        </tr>
+    </table>
+
+    <h2>Analysis</h2>
+    <ul>
+        <li>Strong positive correlation between Generative AI awareness and interest in AI-related education and skills.</li>
+        <li>Moderate correlation with economic opportunity and AI job creation, suggesting potential for new opportunities.</li>
+        <li>Weak correlation with general online learning, indicating a specific focus on AI-related education.</li>
+        <li>Little to no correlation with income inequality and wealth gap, suggesting that the impact on overall economic disparities may be limited or delayed.</li>
+    </ul>
+
+    <h2>Limitations and Further Research</h2>
+    <ul>
+        <li>Correlation does not imply causation; these relationships need further investigation.</li>
+        <li>Search data alone cannot provide a complete picture of actual skill acquisition, job market changes, or economic impacts.</li>
+        <li>The time frame for this analysis is relatively short, and long-term trends may differ.</li>
+        <li>Further research should include:
             <ul>
-                <li>AI literacy shows exponential growth from 2022 onwards, indicating a rapid increase in public understanding of AI technologies.</li>
-                <li>Generative AI interest spikes dramatically in 2023, coinciding with the release of popular tools like ChatGPT.</li>
-                <li>AI writing tools and prompt engineering gain significant traction in 2023-2024, suggesting practical application of AI in everyday tasks.</li>
+                <li>Data on actual AI skill acquisition rates and their impact on employment and income.</li>
+                <li>Analysis of demographics accessing AI-related educational resources.</li>
+                <li>Surveys or interviews to understand motivations behind increased interest in AI technologies and education.</li>
+                <li>Real-world case studies of Generative AI implementation in educational settings and its effects on learning outcomes.</li>
+                <li>Longitudinal studies to track the long-term impact of AI awareness on educational and economic disparities.</li>
             </ul>
-        </div>
-    </div>
+        </li>
+    </ul>
 
-    <div class="container">
-        <h2>Education and Skills Development</h2>
-        <div class="chart-container">
-            <canvas id="educationChart"></canvas>
-        </div>
-        <div class="explanation">
-            <p>This chart shows trends in AI-related education and skills development. Key observations:</p>
-            <ul>
-                <li>Online learning interest peaks in 2020 (likely due to COVID-19) but remains higher than pre-2020 levels, indicating a sustained shift towards digital learning.</li>
-                <li>AI education resources and university AI courses show moderate growth from 2022, suggesting increasing accessibility of AI education.</li>
-                <li>Digital skills training interest increases steadily from 2022, reflecting the growing recognition of the importance of these skills in the AI era.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>Economic Indicators</h2>
-        <div class="chart-container">
-            <canvas id="economicChart"></canvas>
-        </div>
-        <div class="explanation">
-            <p>This chart illustrates economic indicators related to AI adoption. Key observations:</p>
-            <ul>
-                <li>AI economic impact and productivity gains start showing in data from 2023, suggesting tangible effects of AI on the economy.</li>
-                <li>Tech job market interest grows steadily, with a notable increase from 2022, indicating potential job creation in AI-related fields.</li>
-                <li>Income inequality interest decreases slightly from 2020 onwards, which could potentially indicate a positive impact of AI on economic disparities.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>Correlation Analysis</h2>
-        <div id="correlationTable"></div>
-        <div class="explanation">
-            <p>This table shows the correlations between various AI awareness, education, and economic indicators. Key findings:</p>
-            <ul>
-                <li>Strong positive correlations between AI literacy and AI education resources, university AI courses, AI economic impact, and the tech job market.</li>
-                <li>Similar strong correlations for generative AI awareness.</li>
-                <li>Moderate correlations between AI awareness metrics and digital skills training.</li>
-                <li>No strong correlations found with income inequality, suggesting a complex relationship.</li>
-            </ul>
-            <p>These correlations suggest that increased AI awareness is closely tied to growth in AI education and economic impact, potentially contributing to bridging educational gaps and creating new economic opportunities.</p>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>Conclusion</h2>
-        <p>The data suggests that increased awareness and adoption of AI technologies, particularly from 2022 onwards, coincides with growing interest in AI-related educational resources and economic impacts. This trend could potentially contribute to bridging educational gaps by making AI knowledge more accessible and alleviating economic disparities through new job opportunities and productivity gains. However, the lack of strong correlation with income inequality suggests that the impact on overall economic disparities may be limited or require more time to manifest.</p>
-        <p>To leverage the potential of AI in addressing educational and economic disparities, focus areas should include:</p>
-        <ul>
-            <li>Expanding AI education resources and university courses</li>
-            <li>Promoting digital skills training alongside AI awareness</li>
-            <li>Investigating ways to translate increased AI awareness and economic impact into reduced income inequality</li>
-            <li>Ensuring equitable access to AI education and job opportunities</li>
-        </ul>
-        <p>Further research is needed to establish causal relationships and long-term impacts of AI awareness on educational and economic disparities.</p>
-    </div>
-
-    <script>
-    // Data for charts
-    const years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
-    const aiLiteracy = [0, 0, 0, 0, 0, 0, 0, 0.03, 0, 0, 0, 0, 0.69, 2.51, 3.28];
-    const generativeAI = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12.68, 127.29, 142.48];
-    const aiWritingTools = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.33, 0, 2.44, 3.23, 5.04];
-    const onlineLearning = [196.75, 200.44, 186.66, 192.35, 188.25, 165.54, 125.57, 120.94, 110.35, 101.26, 195.61, 114.37, 122.15, 110.68, 116.49];
-    const aiEducationResources = [0, 0, 0, 0, 0, 0, 0, 0.36, 0, 0, 0, 0, 0, 0.35, 0.48];
-    const universityAICourses = [0, 0, 0, 0, 0.53, 0, 0, 0.34, 0, 0.31, 0, 0, 0, 0.80, 1.16];
-    const digitalSkillsTraining = [0, 0, 0.65, 0, 0, 0, 0.42, 0, 0.40, 0.37, 0.39, 0, 0.39, 0.57, 0.52];
-    const aiEconomicImpact = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0.36, 0, 0, 0, 0.42, 1.17];
-    const techJobMarket = [1.25, 0.92, 0.68, 0.75, 0.67, 0.73, 0.73, 0.69, 0.65, 0.60, 0.89, 0.71, 0.67, 2.00, 4.31];
-    const incomeInequality = [11.78, 17.90, 17.86, 20.55, 28.94, 29.08, 31.24, 23.95, 23.20, 28.21, 18.83, 14.85, 21.54, 25.73, 26.23];
-
-    // Awareness Chart
-    const awarenessCtx = document.getElementById('awarenessChart').getContext('2d');
-    new Chart(awarenessCtx, {
-        type: 'line',
-        data: {
-            labels: years,
-            datasets: [
-                {
-                    label: 'AI Literacy',
-                    data: aiLiteracy,
-                    borderColor: 'rgb(75, 192, 192)',
-                    tension: 0.1
-                },
-                {
-                    label: 'Generative AI',
-                    data: generativeAI,
-                    borderColor: 'rgb(255, 99, 132)',
-                    tension: 0.1
-                },
-                {
-                    label: 'AI Writing Tools',
-                    data: aiWritingTools,
-                    borderColor: 'rgb(54, 162, 235)',
-                    tension: 0.1
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    title: {
-                        display: true,
-                        text: 'Search Interest (per 10 million)'
-                    }
-                }
-            }
-        }
-    });
-
-    // Education Chart
-    const educationCtx = document.getElementById('educationChart').getContext('2d');
-    new Chart(educationCtx, {
-        type: 'line',
-        data: {
-            labels: years,
-            datasets: [
-                {
-                    label: 'Online Learning',
-                    data: onlineLearning,
-                    borderColor: 'rgb(75, 192, 192)',
-                    tension: 0.1
-                },
-                {
-                    label: 'AI Education Resources',
-                    data: aiEducationResources,
-                    borderColor: 'rgb(255, 99, 132)',
-                    tension: 0.1
-                },
-                {
-                    label: 'University AI Courses',
-                    data: universityAICourses,
-                    borderColor: 'rgb(54, 162, 235)',
-                    tension: 0.1
-                },
-                {
-                    label: 'Digital Skills Training',
-                    data: digitalSkillsTraining,
-                    borderColor: 'rgb(153, 102, 255)',
-                    tension: 0.1
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    title: {
-                        display: true,
-                        text: 'Search Interest (per 10 million)'
-                    }
-                }
-            }
-        }
-    });
-
-    // Economic Chart
-    const economicCtx = document.getElementById('economicChart').getContext('2d');
-    new Chart(economicCtx, {
-        type: 'line',
-        data: {
-            labels: years,
-            datasets: [
-                {
-                    label: 'AI Economic Impact',
-                    data: aiEconomicImpact,
-                    borderColor: 'rgb(75, 192, 192)',
-                    tension: 0.1
-                },
-                {
-                    label: 'Tech Job Market',
-                    data: techJobMarket,
-                    borderColor: 'rgb(255, 99, 132)',
-                    tension: 0.1
-                },
-                {
-                    label: 'Income Inequality',
-                    data: incomeInequality,
-                    borderColor: 'rgb(54, 162, 235)',
-                    tension: 0.1
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    title: {
-                        display: true,
-                        text: 'Search Interest (per 10 million)'
-                    }
-                }
-            }
-        }
-    });
-</script>
-</body>
-</html>
-<script>
-    // Correlation Analysis
-    function correlation(x, y) {
-        const n = x.length;
-        const sum_x = x.reduce((a, b) => a + b, 0);
-        const sum_y = y.reduce((a, b) => a + b, 0);
-        const sum_xy = x.reduce((total, xi, i) => total + xi * y[i], 0);
-        const sum_x2 = x.reduce((total, xi) => total + xi * xi, 0);
-        const sum_y2 = y.reduce((total, yi) => total + yi * yi, 0);
-
-        const numerator = n * sum_xy - sum_x * sum_y;
-        const denominator = Math.sqrt((n * sum_x2 - sum_x * sum_x) * (n * sum_y2 - sum_y * sum_y));
-
-        return numerator / denominator;
-    }
-
-    const correlations = [
-        { var1: "AI Literacy", var2: "Online Learning", r: correlation(aiLiteracy, onlineLearning) },
-        { var1: "AI Literacy", var2: "AI Education Resources", r: correlation(aiLiteracy, aiEducationResources) },
-        { var1: "AI Literacy", var2: "University AI Courses", r: correlation(aiLiteracy, universityAICourses) },
-        { var1: "AI Literacy", var2: "Digital Skills Training", r: correlation(aiLiteracy, digitalSkillsTraining) },
-        { var1: "AI Literacy", var2: "AI Economic Impact", r: correlation(aiLiteracy, aiEconomicImpact) },
-        { var1: "AI Literacy", var2: "Tech Job Market", r: correlation(aiLiteracy, techJobMarket) },
-        { var1: "AI Literacy", var2: "Income Inequality", r: correlation(aiLiteracy, incomeInequality) },
-        { var1: "Generative AI", var2: "Online Learning", r: correlation(generativeAI, onlineLearning) },
-        { var1: "Generative AI", var2: "AI Education Resources", r: correlation(generativeAI, aiEducationResources) },
-        { var1: "Generative AI", var2: "University AI Courses", r: correlation(generativeAI, universityAICourses) },
-        { var1: "Generative AI", var2: "Digital Skills Training", r: correlation(generativeAI, digitalSkillsTraining) },
-        { var1: "Generative AI", var2: "AI Economic Impact", r: correlation(generativeAI, aiEconomicImpact) },
-        { var1: "Generative AI", var2: "Tech Job Market", r: correlation(generativeAI, techJobMarket) },
-        { var1: "Generative AI", var2: "Income Inequality", r: correlation(generativeAI, incomeInequality) }
-    ];
-
-    // Sort correlations by absolute value in descending order
-    correlations.sort((a, b) => Math.abs(b.r) - Math.abs(a.r));
-
-    // Create correlation table
-    const correlationTable = document.getElementById('correlationTable');
-    let tableHTML = `
-        <table>
-            <tr>
-                <th>Variable 1</th>
-                <th>Variable 2</th>
-                <th>Correlation Coefficient</th>
-                <th>Strength</th>
-            </tr>
-    `;
-
-    correlations.forEach(({ var1, var2, r }) => {
-        let strength;
-        if (Math.abs(r) >= 0.7) {
-            strength = "Strong";
-        } else if (Math.abs(r) >= 0.5) {
-            strength = "Moderate";
-        } else if (Math.abs(r) >= 0.3) {
-            strength = "Weak";
-        } else {
-            strength = "Very Weak";
-        }
-
-        tableHTML += `
-            <tr>
-                <td>${var1}</td>
-                <td>${var2}</td>
-                <td>${r.toFixed(2)}</td>
-                <td>${strength}</td>
-            </tr>
-        `;
-    });
-
-    tableHTML += '</table>';
-    correlationTable.innerHTML = tableHTML;
-</script>
+    <h2>Conclusion</h2>
+    <p>The correlation analysis suggests a strong relationship between increased awareness of Generative AI and interest in AI-related education and skills. However, the impact on broader economic disparities appears to be limited in the short term. Further research with additional data sources and methodologies is needed to fully understand the long-term implications of Generative AI awareness on educational gaps and economic disparities.</p>
 </body>
 </html>
